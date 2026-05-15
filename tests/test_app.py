@@ -1,3 +1,9 @@
+import sys
+import os
+
+# Добавляем родительскую папку в путь поиска Python
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import pytest
 from app import app
 
